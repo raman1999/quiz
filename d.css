@@ -1,0 +1,67 @@
+port url(/stylesheets/utilities.css);
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Comfortaa:wght@700&family=Rowdies&display=swap");
+
+:root {
+  /* diferent theme  shades */
+  --theme1: #ffefdb;
+  --theme2: #ffe7c7;
+  --theme3: #ffdeb4;
+  --theme4: #ffd6a0;
+  --theme5: #ffcd8d;
+  --theme6: #ffc579;
+  --theme7: #ffbd65;
+  --theme8: #ffb452;
+  --theme9: #ffa32b;
+  --bg-color: black;
+  --card-bg: rgb(10, 10, 10);
+  --txt-card: white;
+  --rules-bg: rgb(40, 40, 40);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body,
+.nav {
+  background-color: var(--bg-color);
+  color: var(--theme6);
+}
+.nav {
+  border-color: var(--bg-color);
+}
+.nav-header {
+  font-family: "Rowdies", cursive;
+  font-size: 2.5rem;
+}
+
+img {
+  border-top-left-radius: 1rem;
+  width: 100%;
+}
+
+.category-component {
+  justify-content: center;
+  gap: 3rem;
+  margin-bottom: 10rem;
+  margin-top: 2rem;
+}
+
+/* overriding card style from component library */
+.card {
+  border-color: lightgrey;
+  width: 15vw;
+  padding: 0;
+  background-color: var(--card-bg);
+  color: var(--txt-card);
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+.card-heading {
+  font-family: "Abril Fatface", cursive;
+}
+/* overriding button style from component library */
+.category-component .btn {
+  background-color: var(--card-bg);
+  color: var(--txt-card);
+  border-color: var(--txt-card);
